@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Output} from '@angular/core';
+import {RegisterUserComponent} from "../users/register-user/register-user.component";
 
 @Component({
   selector: 'app-header',
@@ -12,4 +13,6 @@ export class HeaderComponent {
         this.sidebarStatus =!this.sidebarStatus;
         this.showSidebarEmitter.emit(this.sidebarStatus);
   }
+
+  protected readonly RegisterUserComponent = RegisterUserComponent;
 }

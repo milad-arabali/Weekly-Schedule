@@ -10,18 +10,15 @@ import {ThemeModule} from "./main/Theme.module";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatMenuModule} from "@angular/material/menu";
-
-
+import {UserModule} from "./users/user.module";
+import {CourseModule} from "./Course/course/Course.module";
+import {RouteModule} from "./Route.module";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-
-
-
-
   ],
   imports: [
     BrowserModule,
@@ -32,7 +29,11 @@ import {MatMenuModule} from "@angular/material/menu";
     ThemeModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    UserModule,
+    CourseModule,
+    RouteModule
+
 
 
   ],

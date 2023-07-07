@@ -3,11 +3,11 @@
     <mat-icon *ngIf="sidebarStatus">menu</mat-icon>
     <mat-icon *ngIf="!sidebarStatus">close</mat-icon>
   </a>
-  <a mat-button>
+  <a mat-button [routerLink]="['RegisterUsers']" RouterLinkActive="['active']">
     <mat-icon>person</mat-icon>
     <span>Register</span>
   </a>
-  <a mat-button>
+  <a mat-button [routerLink]="['loginUsers']" RouterLinkActive="['active']">
     <mat-icon>login</mat-icon>
     <span>Login</span>
   </a>
@@ -16,7 +16,7 @@
     <span>Course</span>
   </a>
   <mat-menu #dropdown>
-    <button mat-menu-item>courses</button>
+    <button mat-menu-item [routerLink]="['Courses']" RouterLinkActive="['active']">courses</button>
     <button mat-menu-item>New courses</button>
   </mat-menu>
 </mat-toolbar>
