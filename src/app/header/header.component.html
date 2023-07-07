@@ -1,3 +1,6 @@
 <mat-toolbar>
-  کتابخانه مرکزی
+  <button mat-button (click)="showSidebar()">
+    <mat-icon *ngIf="sidebarStatus">menu</mat-icon>
+    <mat-icon *ngIf="!sidebarStatus">close</mat-icon>
+  </button>
 </mat-toolbar>

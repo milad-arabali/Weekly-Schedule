@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Weekly-Schedule';
+
+    showSidebar:boolean= true;
+  changeSidebar(status: boolean) {
+            this.showSidebar=status;
+  }
 }
