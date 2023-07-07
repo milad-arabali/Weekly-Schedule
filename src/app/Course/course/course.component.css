@@ -1,0 +1,19 @@
+mat-tab{
+  width: 100px;
+  height: 200px;
+}
+.matcards{
+  margin: 20px 10px;
+}
+mat-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*width: 90px;*/
+  /*height: 100px;*/
+  /*height: 100px;*/
+}
+.course-action{
+  text-align: center;
+
+}

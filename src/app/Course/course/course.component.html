@@ -1,0 +1,33 @@
+<mat-tab-group>
+  <mat-tab label="beginners">
+        <mat-card class="matcards" *ngFor="let c of courses">
+                <mat-card-header>
+                  <mat-card-title>
+                    {{c.name}}
+                  </mat-card-title>
+                </mat-card-header>
+          <img mat-card-image [src]="c.imagePath">
+          <mat-card-content>
+            <p>{{c.description}}</p>
+            <p>{{c.date}}</p>
+          </mat-card-content>
+          <mat-card-actions class="course-action">
+            <button mat-raised-button color="primary">View Course</button>
+            <button mat-raised-button color="accent">Edit Course</button>
+
+          </mat-card-actions>
+        </mat-card>
+
+
+  </mat-tab>
+  <mat-tab label="advanced">
+
+
+
+  </mat-tab>
+
+
+
+
+
+</mat-tab-group>
