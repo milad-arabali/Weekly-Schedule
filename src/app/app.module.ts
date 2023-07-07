@@ -6,7 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import {headerModule} from "./header/header.module";
 import {ListSidebarModule} from "./main/list-sidebar/List-sidebar.module";
 import {UserSidebarModule} from "./main/user-sidebar/User-sidebar.module";
-import {MainModule} from "./main/Main.module";
+import {ThemeModule} from "./main/Theme.module";
 
 
 
@@ -26,7 +26,7 @@ import {MainModule} from "./main/Main.module";
     headerModule,
     ListSidebarModule,
     UserSidebarModule,
-    MainModule
+    ThemeModule
 
 
   ],
