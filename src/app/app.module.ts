@@ -7,6 +7,9 @@ import {headerModule} from "./header/header.module";
 import {ListSidebarModule} from "./main/list-sidebar/List-sidebar.module";
 import {UserSidebarModule} from "./main/user-sidebar/User-sidebar.module";
 import {ThemeModule} from "./main/Theme.module";
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
+import {MatMenuModule} from "@angular/material/menu";
 
 
 
@@ -26,7 +29,10 @@ import {ThemeModule} from "./main/Theme.module";
     headerModule,
     ListSidebarModule,
     UserSidebarModule,
-    ThemeModule
+    ThemeModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule
 
 
   ],
