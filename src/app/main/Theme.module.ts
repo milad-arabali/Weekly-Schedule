@@ -8,6 +8,7 @@ import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import {headerModule} from "../header/header.module";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {MatListModule} from "@angular/material/list";
 
 
 
@@ -28,7 +29,8 @@ import {MatIconModule} from "@angular/material/icon";
     MatSidenavModule,
     headerModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule
   ]
 })
 
