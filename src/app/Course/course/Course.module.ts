@@ -3,6 +3,7 @@ import {CommonModule} from "@angular/common";
 import {CourseComponent} from "./course.component";
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 
 
@@ -13,7 +14,8 @@ import {MatCardModule} from "@angular/material/card";
   imports: [
     CommonModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ]
 })
 export class CourseModule {}
