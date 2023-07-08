@@ -11,8 +11,9 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatMenuModule} from "@angular/material/menu";
 import {UserModule} from "./users/user.module";
-import {CourseModule} from "./Course/course/Course.module";
+import {CourseModule} from "./Course/Course.module";
 import {RouteModule} from "./Route.module";
+import {Createstep1Module} from "./Course/create-course/createstep1/createstep1.module";
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import {RouteModule} from "./Route.module";
 
 
   ],
-  providers: [],
+  providers: [CourseModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

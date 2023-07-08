@@ -1,4 +1,4 @@
-import {Course} from "../../Share/Course.model";
+import {Course} from "../Share/Course.model";
 export class CourseService{
   private courses: Course[] = [
     new Course('دستور پخت ماکارونی',

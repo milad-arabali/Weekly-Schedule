@@ -9,7 +9,7 @@
           <img mat-card-image [src]="c.imagePath">
           <mat-card-content>
             <p>{{c.description}}</p>
-            <p>{{c.date}}</p>
+            <p>{{c.date | date:'shortTime'}}</p>
           </mat-card-content>
           <mat-card-actions class="course-action">
             <button mat-raised-button color="primary">View Course</button>
