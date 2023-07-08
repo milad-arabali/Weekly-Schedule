@@ -13,7 +13,9 @@ import {MatMenuModule} from "@angular/material/menu";
 import {UserModule} from "./users/user.module";
 import {CourseModule} from "./Course/Course.module";
 import {RouteModule} from "./Route.module";
-import {Createstep1Module} from "./Course/create-course/createstep1/createstep1.module";
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -33,7 +35,10 @@ import {Createstep1Module} from "./Course/create-course/createstep1/createstep1.
     MatMenuModule,
     UserModule,
     CourseModule,
-    RouteModule
+    RouteModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
 
 
 
