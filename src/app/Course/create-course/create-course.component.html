@@ -1,0 +1,30 @@
+<div class="create-course-panel data-form">
+  <h2>New Course</h2>
+  <mat-horizontal-stepper>
+    <mat-step>
+      <ng-template matStepLabel>Course Detail</ng-template>
+          <app-createstep1></app-createstep1>
+      <div>
+        <button mat-raised-button color="primary" matStepperNext>
+          Add course Lesson
+        </button>
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Course Course</ng-template>
+          <app-createstep2></app-createstep2>
+      <div>
+        <button mat-raised-button color="primary" matStepperNext>
+          Add course Lesson
+        </button>
+      </div>
+      <div>
+        <button mat-raised-button color="accent" matStepperPrevious>
+          Back
+        </button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+
+
+</div>
