@@ -16,6 +16,8 @@ import {MatRadioModule} from "@angular/material/radio";
 import {MatSelectModule} from "@angular/material/select";
 import {ReactiveFormsModule} from "@angular/forms";
 import {Createstep1Module} from "./create-course/createstep1/createstep1.module";
+import { ViewcourseComponent } from './viewcourse/viewcourse.component';
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 
 
@@ -23,8 +25,8 @@ import {Createstep1Module} from "./create-course/createstep1/createstep1.module"
   declarations:[
     CourseComponent,
     CreateCourseComponent,
-
-    Createstep2Component
+    Createstep2Component,
+    ViewcourseComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +42,9 @@ import {Createstep1Module} from "./create-course/createstep1/createstep1.module"
     MatRadioModule,
     MatSelectModule,
     ReactiveFormsModule,
-    Createstep1Module
+    Createstep1Module,
+    RouterLinkActive,
+    RouterLink
   ]
 })
 export class CourseModule {}

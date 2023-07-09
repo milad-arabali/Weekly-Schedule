@@ -4,6 +4,7 @@ import {CourseComponent} from "./Course/course/course.component";
 import {RegisterUserComponent} from "./users/register-user/register-user.component";
 import {LoginUserComponent} from "./users/login-user/login-user.component";
 import {CreateCourseComponent} from "./Course/create-course/create-course.component";
+import {ViewcourseComponent} from "./Course/viewcourse/viewcourse.component";
 
 
 
@@ -13,7 +14,8 @@ const appRoute : Routes =[
   {path:'Courses' , component: CourseComponent },
   {path:'RegisterUsers' , component: RegisterUserComponent},
   {path:'loginUsers' , component: LoginUserComponent},
-  {path:'CreateCourse' ,component: CreateCourseComponent}
+  {path:'CreateCourse' ,component: CreateCourseComponent},
+  {path:'viewCourse/:id' , component: ViewcourseComponent}
 ]
 
 @NgModule({
