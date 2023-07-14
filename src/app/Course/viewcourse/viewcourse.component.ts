@@ -13,8 +13,8 @@ import {MatTableDataSource} from "@angular/material/table";
   styleUrls: ['./viewcourse.component.css']
 })
 export class ViewcourseComponent implements OnInit,AfterViewInit{
-  @ViewChild(MatPaginator) paginator : MatPaginator;
-  @ViewChild(MatSort) sort : MatSort;
+  @ViewChild(MatPaginator) paginator !: MatPaginator;
+  @ViewChild(MatSort) sort !: MatSort;
 
   data: PeriodicElement[] = [
     {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},

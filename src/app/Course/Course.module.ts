@@ -23,6 +23,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
 import { CourseDialogComponent } from './course-dialog/course-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 
 
@@ -54,7 +55,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatDialogModule
+    MatDialogModule,
+    MatGridListModule
   ]
 })
 export class CourseModule {}
