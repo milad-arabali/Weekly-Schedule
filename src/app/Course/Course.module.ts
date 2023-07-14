@@ -18,6 +18,11 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {Createstep1Module} from "./create-course/createstep1/createstep1.module";
 import { ViewcourseComponent } from './viewcourse/viewcourse.component';
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatSortModule} from "@angular/material/sort";
+import { CourseDialogComponent } from './course-dialog/course-dialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
 
 
 
@@ -26,7 +31,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     CourseComponent,
     CreateCourseComponent,
     Createstep2Component,
-    ViewcourseComponent
+    ViewcourseComponent,
+    CourseDialogComponent
   ],
   imports: [
     CommonModule,
@@ -44,7 +50,11 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     ReactiveFormsModule,
     Createstep1Module,
     RouterLinkActive,
-    RouterLink
+    RouterLink,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatDialogModule
   ]
 })
 export class CourseModule {}

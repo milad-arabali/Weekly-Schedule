@@ -12,8 +12,8 @@
             <p>{{c.date | date:'shortTime'}}</p>
           </mat-card-content>
           <mat-card-actions class="course-action">
-            <button mat-raised-button color="primary" [routerLink]="['viewCourse',c.id]">View Course</button>
-            <button mat-raised-button color="accent">Edit Course</button>
+            <button mat-raised-button color="primary" [routerLink]="['/viewCourse',c.id]">View Course</button>
+            <button mat-raised-button color="accent" (click)="editCourse(c)">Edit Course</button>
 
           </mat-card-actions>
         </mat-card>

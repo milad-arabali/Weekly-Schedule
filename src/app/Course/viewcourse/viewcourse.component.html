@@ -1,4 +1,48 @@
 <div class="course-header">
   <h2>{{course?.name}}</h2>
-  <p>{{course?.id}}</p>
+  <img [src]="course?.imagePath">
+</div>
+<div class="scrolling-container">
+
+  <table mat-table matSort matSortActive="position" matSortDisableClear  matSortDirection="asc" [dataSource]="dataSource" class="mat-elevation-z8 tableclass1" >
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th  mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by position"> No.</th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th  mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name" > Name</th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell mat-sort-header *matHeaderCellDef> Weight</th>
+      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell  mat-sort-header *matHeaderCellDef> Symbol</th>
+      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+  </table>
+
+  <mat-paginator #paginator class="mat-elevation-z8"
+                 showFirstLastButtons
+                 [pageSizeOptions]="[3,5,10]">
+  </mat-paginator>
+
+
 </div>
